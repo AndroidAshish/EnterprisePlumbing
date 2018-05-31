@@ -1,0 +1,249 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+MERGED from [com.android.support:design:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\490ba1e3c23d4a9c6d31651df44f4e44\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f95191a4c6e0ed42ec6af30801fbcb54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\53f52dadd15e7567a4d82b1d2c428d5c\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\c77ada60dae8fe4a0a6bc01851c5b33d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\f57fcae1b0e1418dbac6042f0ecb5bc2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\91475a17d90e8c9de23d8d3ac965ad42\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\b1671dd17aae38e17dea9be9b26e33a7\AndroidManifest.xml:16:1-19:12
+MERGED from [de.hdodenhof:circleimageview:1.3.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\circleimageview-1.3.0.aar\0c4d48053cdbc8a9efe533bbb495d517\AndroidManifest.xml:2:1-11:12
+MERGED from [:signature-pad] D:\LiveProject\EnterprisePlumbing\signature-pad\build\intermediates\manifests\full\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\af0f913baf639ace45e9390b5e8372a6\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\6316bcc00d14e52dd573de227b57324a\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\dc143d2e1e8305f2c04015f227765f4d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\7a82afd1dae0c08040dfda460a6cdceb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\eb28924fba0d6dfd5e229aa1637d0abf\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\806185d25ccc8c946561bb0fbec2acbc\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\2f8c6957a87121e63435066205c21236\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\46cae090e05d48dc5d3db6a087f55b00\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\0961b203140f3922281b12dafae4c0ef\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\3de7782719b50f1a0f80191e6e6d9d44\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\619c5b8c69fa3a924c2364cfe37e1221\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37cbc601f84ff4822b0e1ff42eb56d4e\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4ebc41682af27f88fb3794c5671f3ed\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4f893e4ca5c5315ad11e2bc056ff1435\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b7888c2c8e85627008e7cd68f81fed42\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+	package
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.location
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:4:5-85
+	android:required
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:4:60-83
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:4:19-59
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:5:5-71
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:5:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:6:5-71
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:6:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:7:5-72
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:7:22-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.INTERNET
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:9:5-67
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:10:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:11:22-76
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:12:5-98
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:12:22-95
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:14:22-77
+uses-permission#android.permission.CAMERA
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:15:5-65
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:15:22-62
+application
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:19:5-61:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\53f52dadd15e7567a4d82b1d2c428d5c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\53f52dadd15e7567a4d82b1d2c428d5c\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\91475a17d90e8c9de23d8d3ac965ad42\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\91475a17d90e8c9de23d8d3ac965ad42\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:1.3.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\circleimageview-1.3.0.aar\0c4d48053cdbc8a9efe533bbb495d517\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:1.3.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\circleimageview-1.3.0.aar\0c4d48053cdbc8a9efe533bbb495d517\AndroidManifest.xml:9:5-20
+MERGED from [:signature-pad] D:\LiveProject\EnterprisePlumbing\signature-pad\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
+MERGED from [:signature-pad] D:\LiveProject\EnterprisePlumbing\signature-pad\build\intermediates\manifests\full\debug\AndroidManifest.xml:11:5-20
+	android:supportsRtl
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:25:9-35
+	android:label
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:22:9-41
+	android:hardwareAccelerated
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:26:9-43
+	android:roundIcon
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:23:9-54
+	android:icon
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:21:9-43
+	android:allowBackup
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:20:9-35
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:27:9-40
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:24:9-70
+activity#com.example.smart.enterpriseplumbing.SplashScreen
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:28:9-35:20
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:28:19-47
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:31:17-69
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:33:27-74
+activity#com.example.smart.enterpriseplumbing.LoginActivity
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:37:9-39:58
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:38:13-49
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:39:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:37:19-48
+activity#com.example.smart.enterpriseplumbing.PendingWorkActivity
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:41:9-43:58
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:42:13-49
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:43:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:41:19-54
+activity#com.example.smart.enterpriseplumbing.ActivitySegment
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:45:9-47:54
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:46:9-45
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:47:9-52
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:45:19-50
+activity#com.example.smart.enterpriseplumbing.TermAndConditionActivity
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:49:9-51:58
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:50:13-49
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:51:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:49:19-59
+activity#com.example.smart.enterpriseplumbing.activites.FinalSignatureActivity
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:52:9-54:58
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:53:13-49
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:54:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:52:19-67
+activity#com.example.smart.enterpriseplumbing.FinalSignstureActivity
+ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:56:9-58:58
+	android:screenOrientation
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:57:13-49
+	android:theme
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:58:13-56
+	android:name
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml:56:19-57
+uses-sdk
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\490ba1e3c23d4a9c6d31651df44f4e44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\design-27.1.0.aar\490ba1e3c23d4a9c6d31651df44f4e44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f95191a4c6e0ed42ec6af30801fbcb54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.0.aar\f95191a4c6e0ed42ec6af30801fbcb54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\53f52dadd15e7567a4d82b1d2c428d5c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\53f52dadd15e7567a4d82b1d2c428d5c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\c77ada60dae8fe4a0a6bc01851c5b33d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.0.aar\c77ada60dae8fe4a0a6bc01851c5b33d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\f57fcae1b0e1418dbac6042f0ecb5bc2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.0.aar\f57fcae1b0e1418dbac6042f0ecb5bc2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\91475a17d90e8c9de23d8d3ac965ad42\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\volley-1.0.0.aar\91475a17d90e8c9de23d8d3ac965ad42\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\b1671dd17aae38e17dea9be9b26e33a7\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\multidex-1.0.1.aar\b1671dd17aae38e17dea9be9b26e33a7\AndroidManifest.xml:18:5-42
+MERGED from [de.hdodenhof:circleimageview:1.3.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\circleimageview-1.3.0.aar\0c4d48053cdbc8a9efe533bbb495d517\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:1.3.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\circleimageview-1.3.0.aar\0c4d48053cdbc8a9efe533bbb495d517\AndroidManifest.xml:5:5-7:41
+MERGED from [:signature-pad] D:\LiveProject\EnterprisePlumbing\signature-pad\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:signature-pad] D:\LiveProject\EnterprisePlumbing\signature-pad\build\intermediates\manifests\full\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\af0f913baf639ace45e9390b5e8372a6\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:adapters:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\adapters-1.3.1.aar\af0f913baf639ace45e9390b5e8372a6\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\6316bcc00d14e52dd573de227b57324a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.databinding:library:1.3.1] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\library-1.3.1.aar\6316bcc00d14e52dd573de227b57324a\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\dc143d2e1e8305f2c04015f227765f4d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.0.aar\dc143d2e1e8305f2c04015f227765f4d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\7a82afd1dae0c08040dfda460a6cdceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.0.aar\7a82afd1dae0c08040dfda460a6cdceb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\eb28924fba0d6dfd5e229aa1637d0abf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.0.aar\eb28924fba0d6dfd5e229aa1637d0abf\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\806185d25ccc8c946561bb0fbec2acbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.0.aar\806185d25ccc8c946561bb0fbec2acbc\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\2f8c6957a87121e63435066205c21236\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.0.aar\2f8c6957a87121e63435066205c21236\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\46cae090e05d48dc5d3db6a087f55b00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.0.aar\46cae090e05d48dc5d3db6a087f55b00\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\0961b203140f3922281b12dafae4c0ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\transition-27.1.0.aar\0961b203140f3922281b12dafae4c0ef\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\3de7782719b50f1a0f80191e6e6d9d44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.0.aar\3de7782719b50f1a0f80191e6e6d9d44\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\619c5b8c69fa3a924c2364cfe37e1221\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.0.aar\619c5b8c69fa3a924c2364cfe37e1221\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37cbc601f84ff4822b0e1ff42eb56d4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\37cbc601f84ff4822b0e1ff42eb56d4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4ebc41682af27f88fb3794c5671f3ed\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e4ebc41682af27f88fb3794c5671f3ed\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4f893e4ca5c5315ad11e2bc056ff1435\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4f893e4ca5c5315ad11e2bc056ff1435\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b7888c2c8e85627008e7cd68f81fed42\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Smart\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\b7888c2c8e85627008e7cd68f81fed42\AndroidManifest.xml:20:5-44
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		ADDED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml
+		INJECTED from D:\LiveProject\EnterprisePlumbing\app\src\main\AndroidManifest.xml

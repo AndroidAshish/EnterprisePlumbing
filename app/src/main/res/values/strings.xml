@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RWB</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">NationwideSolarSolutions</string>
+    <color name="white">#FFFFFF</color>
+    <string name="spinner_title">Select Category</string>
+    <string name="spinner_owner"><![CDATA[  Owner & Follower?]]></string>
+    <string name="spinner_Entire">Enter Company</string>
+    <string name="quila_name">User Name</string>
+    <string name="quila_tagline">user123@gmail.com</string>
+    <string name="quila_name2">UserName!</string>
+    <string name="string_integration"><![CDATA[  App & Integrations?]]></string>
+    <string name="string_user"><![CDATA[  User & Permission?]]></string>
+    <string name="ok">Ok</string>
+    <string name="meat"><![CDATA[Meat &Fish]]></string>
+    <string name="slades"><![CDATA[Sides &Salads]]></string>
+    <string name="beg"><![CDATA[Drinks & Beverages]]></string>
+    <string name="setting">Setting</string>
+    <string name="term"><![CDATA[Terms & Condition]]></string>
+    <string name="servicpay"><![CDATA[Service & Payment]]></string>
+    <string name="product"><![CDATA[PRODUCT & PARTS]]></string>
+</resources>

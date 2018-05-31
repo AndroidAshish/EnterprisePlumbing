@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/confirm_your_booking"
+            android:orientation="vertical"
+            tools:ignore="UnknownId">
+
+
+            <LinearLayout
+                android:id="@+id/toplay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/details_yacht_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/product"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView21"
+                    tools:ignore="RtlCompat" />
+
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="PRODUCT:"
+                                android:textColor="#000000" />
+
+
+
+
+                            <Spinner
+                                android:id="@+id/spinner_Location"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.30"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spinner_title" />
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="BRAND:"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinner_Brand"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.30"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spinner_title" />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FIXTURE TYPE:"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinner_fixture"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.30"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spinner_title" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FINISH/COLOR:"
+                                android:textColor="#000000" />
+
+                            <Spinner
+                                android:id="@+id/spinner_finish"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.30"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spinner_title" />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="PRODUCT 1:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Loc_First"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Product 1"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="BRAND 1:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Brand_First"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="brand 1"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FIXTURE TYPE 1:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_fix_First"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Fixture 1"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FINISH/COLOR 1:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_finish_First"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Finish 1"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="PRODUCT 2:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Loc_Second"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Product 2"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="BRAND 2:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Brand_Second"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="brand 2"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FIXTURE TYPE 2:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_fix_Second"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Fixture 2"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FINISH/COLOR 2:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_finish_Second"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Finish 2"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="PRODUCT 3:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Loc_Third"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Product 3"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="BRAND 3:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Brand_Third"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="brand 3"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FIXTURE TYPE 3:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_fix_Third"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Fixture 3"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FINISH/COLOR 3:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_finish_Third"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Finish 3"
+                              android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    card_view:cardCornerRadius="2dp"
+                    card_view:contentPadding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="PRODCUT 4:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Loc_fourth"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Product 4"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="BRAND 4:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_Brand_fourth"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="brand 4"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FIXTURE TYPE 4:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_fix_Fourth"
+
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Fixture 4"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0.40"
+                                android:text="FINISH/COLOR 4:"
+                                android:textColor="#000000" />
+
+                            <EditText
+                                android:id="@+id/edit_finish_Fourth"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.30"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:hint="Finish 4"
+                                android:textColor="#919191"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="30dp"></LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+         android:id="@+id/button_Save"
+         android:layout_width="match_parent"
+         android:layout_height="35dp"
+         android:layout_alignParentBottom="true"
+         android:background="@color/colorPrimaryDark">
+
+         <TextView
+             android:id="@+id/dddd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:text="SAVE"
+             android:textColor="#ffffff"
+             android:textSize="17sp" />
+     </RelativeLayout>
+
+</RelativeLayout>

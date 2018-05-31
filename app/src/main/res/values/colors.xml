@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#07aaf5</color>
+    <color name="colorPrimaryDark">#4ec0f4</color>
+    <color name="colorAccent">#4ec0f4</color>
+    <color name="colorMarketting">#11a0f8</color>
+    <color name="colorService">#66cd2e</color>
+    <color name="devider">#ebebeb</color>
+    <color name="loginback">#7266ba</color>
+    <color name="squre_color">#4b437c</color>
+    <color name="backcolor">#407266ba</color>
+    <color name="black">#000000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="calm">#2cbf55</color>
+    <color name="confidence">#76923d</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="button_back">#ee791c</color>
+    <color name="text_color">#082f94</color>
+    <color name="product_text_color">#ffffff</color>
+    <color name="basecolor">#d19a03</color>
+    <color name="textcolor">#000000</color>
+    <color name="brouen">#701a1a</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="color_menufont">#555555</color>
+    <color name="colorWhite1">#F7F7F7</color>
+    <color name="pro_cart_textcolor">#b8b8b8</color>
+    <color name="colortext">#eeeeee</color>
+    <color name="color">#767578</color>
+</resources>

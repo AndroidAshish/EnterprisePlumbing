@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/custom_info_layout"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear_Frist"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="#cfd146"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+         android:gravity="center"
+            android:padding="10dp"
+            android:text="When ready to sign click here signature"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+
+    </LinearLayout>
+
+
+
+
+    <include
+        android:id="@+id/radio_layout_include"
+
+        layout="@layout/activity_segment_layout" />
+
+    <FrameLayout
+        android:id="@+id/container_Parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>

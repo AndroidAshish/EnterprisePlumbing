@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\LiveProject\\EnterprisePlumbing\\signature-pad\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "C:\\Users\\Smart\\.gradle\\caches\\transforms-1\\files-1.1\\adapters-1.3.1.aar\\af0f913baf639ace45e9390b5e8372a6\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,112,155",
+                        "endColumns": "56,42,40",
+                        "endOffsets": "107,150,191"
+                    },
+                    "to": {
+                        "startLines": "4,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "388,445,488",
+                        "endColumns": "56,42,40",
+                        "endOffsets": "440,483,524"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Smart\\.gradle\\caches\\transforms-1\\files-1.1\\library-1.3.1.aar\\6316bcc00d14e52dd573de227b57324a\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "40",
+                        "endOffsets": "91"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "347",
+                        "endColumns": "40",
+                        "endOffsets": "383"
+                    }
+                }
+            ]
+        }
+    ]
+}
