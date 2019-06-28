@@ -9,12 +9,12 @@ public class Constants {
     // https://demo.goigi.biz/kidcheck/
 
     public static final String IS_LOGIN = "user_api";
-// public static final String HOST_URL = "https://api.pipedrive.com/v1/";
+ public static final String HOST_URL = "http://api.builtbydesign-inc.com:93/api/order_form/";
 
  // public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
+// public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
 
-
-  public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
+ // public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
     //  public static final String REGISTER_URL = "http://dev.goigi.biz/kidcheck/App/Api/Registration";
     public static final String REGISTER_URL = "https://demo.goigi.biz/kidcheck/App/Api/Registration";
     public static final String INFLUENCE_SIGN_URL = "SignUpInfluencerApi?";

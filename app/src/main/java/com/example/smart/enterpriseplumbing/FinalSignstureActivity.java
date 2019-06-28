@@ -288,7 +288,8 @@ public class FinalSignstureActivity  extends CommonBaseActivity implements View.
 
             try {
                 RequestQueue requestQueue = Volley.newRequestQueue(this);
-                String URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/Postorder_form";
+                String URL = Constants.HOST_URL+"Postorder_form";
+              //  String URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/Postorder_form";
                 JSONObject params = new JSONObject();
                 params.put("save_signature", encoded);
                 params.put("IsActive", "1");
