@@ -56,7 +56,9 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -78,6 +80,7 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
     private Button mClearButton;
     private Button mSaveButton;
     String encoded;
+    String strTime,todayDate,strDay;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,12 +89,20 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
         ImageView back_image = (ImageView) findViewById(R.id.back_Arrow);
         catogory_name_array = new ArrayList<String>();
         catogory_id_array = new ArrayList<String>();
-       TextView txt_Header = (TextView) findViewById(R.id.header_title);
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat sdf4 = new SimpleDateFormat("EEE");
+        strTime = sdf.format(c.getTime());
+        todayDate = sdf3.format(c.getTime());
+        strDay = sdf4.format(c.getTime());
+
+        TextView txt_Header = (TextView) findViewById(R.id.header_title);
         TextView header_Save = (TextView) findViewById(R.id.header_Save);
         ImageView search_Tick=(ImageView)findViewById(R.id.search_Tick);
         header_Save.setVisibility(View.INVISIBLE);
         txt_Header.setText("New Job");
-        search_Tick.setVisibility(View.VISIBLE);
+        search_Tick.setVisibility(View.GONE);
         back_image.setOnClickListener(this);
         search_Tick.setOnClickListener(this);
 
@@ -145,25 +156,6 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
                 loginApi(encoded);
 
 
-              /*  Bitmap signatureBitmap = mSignaturePad.getSignatureBitmap();
-
-                ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-                signatureBitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArrayOutputStream);
-                byte[] byteArray = byteArrayOutputStream .toByteArray();
-
-                encoded = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                Toast.makeText(TermAndConditionActivity.this, encoded, Toast.LENGTH_SHORT).show();*/
-/*
-                if (addJpgSignatureToGallery(signatureBitmap)) {
-                    Toast.makeText(MainActivity.this, "Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Unable to store the signature", Toast.LENGTH_SHORT).show();
-                }
-                if (addSvgSignatureToGallery(mSignaturePad.getSignatureSvg())) {
-                    Toast.makeText(MainActivity.this, "SVG Signature saved into the Gallery", Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, "Unable to store the SVG signature", Toast.LENGTH_SHORT).show();
-                }*/
             }
         });
 
@@ -295,32 +287,29 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
         if (App.getInstance().isConnected()) {
             progressDialog = setThirdProgressBar();
 
-
-
-
             try {
                 RequestQueue requestQueue = Volley.newRequestQueue(this);
                 String URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/Postorder_form";
                 JSONObject params = new JSONObject();
                 params.put("save_signature", encoded);
-                params.put("IsActive", "0");
+                params.put("IsActive", "false");
                 params.put("id", prefs.getStringValueForTag(Constants.ID));
-                params.put("Dispatch_ID", prefs.getStringValueForTag(Constants.SAVE_ID));
-                params.put("customer_of",prefs.getStringValueForTag(Constants.SAVE_OFF));
-                params.put("tech", prefs.getStringValueForTag(Constants.FINAL_PLUMBER));
-                params.put("fname", prefs.getStringValueForTag(Constants.SAVE_FIRST));
-                params.put("lname", prefs.getStringValueForTag(Constants.SAVE_LAST));
-                params.put("address", prefs.getStringValueForTag(Constants.SAVE_ADDRESS));
-                params.put("city", prefs.getStringValueForTag(Constants.SAVE_CITY));
-                params.put("state", prefs.getStringValueForTag(Constants.SAVE_STATE));
-                params.put("zip", prefs.getStringValueForTag(Constants.SAVE_ZIP));
-                params.put("ph_mobile", "");
-                params.put("ph_alternate", "");
-                params.put("ph_primary", "");
+                params.put("Dispatch_ID", prefs.getStringValueForTag(Constants.DISPACT_ID));
+                params.put("customer_of",prefs.getStringValueForTag(Constants.CUSTO_OFF));
+                params.put("tech", prefs.getStringValueForTag(Constants.PLUMBER));
+                params.put("fname", prefs.getStringValueForTag(Constants.FIRST));
+                params.put("lname", prefs.getStringValueForTag(Constants.LAST));
+                params.put("address", prefs.getStringValueForTag(Constants.ADDRESS));
+                params.put("city", prefs.getStringValueForTag(Constants.CITY));
+                params.put("state", prefs.getStringValueForTag(Constants.STATE));
+                params.put("zip", prefs.getStringValueForTag(Constants.ZIP));
+                params.put("ph_mobile", prefs.getStringValueForTag(Constants.PH_PHONE));
+                params.put("ph_alternate", prefs.getStringValueForTag(Constants.PH_ALERT));
+                params.put("ph_primary", prefs.getStringValueForTag(Constants.PH_PHONE));
                 params.put("email", prefs.getStringValueForTag(Constants.EMAIL));
-                params.put("tenant", "");
-                params.put("tenant_phone", "");
-                params.put("disclaimer", "");
+                params.put("tenant", prefs.getStringValueForTag(Constants.TANT));
+                params.put("tenant_phone", prefs.getStringValueForTag(Constants.TANT_PHONE));
+                params.put("disclaimer", prefs.getStringValueForTag(Constants.DISCLAIMER));
                 params.put("description", prefs.getStringValueForTag(Constants.FINAL_DESC));
                 params.put("diagnosis",prefs.getStringValueForTag(Constants.FINAL_DIAGONIS));
                 params.put("resolution", prefs.getStringValueForTag(Constants.FINAL_RESOLTI));
@@ -333,6 +322,17 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
                 params.put("service_fee", prefs.getStringValueForTag(Constants.SERVICES_FEE));
                 params.put("paid_by", prefs.getStringValueForTag(Constants.PIAB));
                 params.put("total_due", prefs.getStringValueForTag(Constants.DUE));
+                params.put("order_date", prefs.getStringValueForTag(Constants.ORDER_DATE));
+                params.put("GateCode", prefs.getStringValueForTag(Constants.GATE_CODE));
+                params.put("start_order_date", prefs.getStringValueForTag(Constants.START_O_DATE));
+                params.put("Auth", prefs.getStringValueForTag(Constants.AUTH));
+                params.put("Auth_Amount",prefs.getStringValueForTag(Constants.AUTH_AMOUNT));
+                params.put("Check", prefs.getStringValueForTag(Constants.CHECK));
+                params.put("Collected", prefs.getStringValueForTag(Constants.COLLECTED));
+                params.put("sign_bool","");
+                params.put("Invoice_Number",prefs.getStringValueForTag(Constants.IN_VOICE));
+                params.put("note", "");
+                params.put("ModifiedDate",todayDate);
                 params.put("submit_signature", "");
                 final String requestBody = params.toString();
 
@@ -385,117 +385,6 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
             }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           /* StringRequest strRequest = new StringRequest(Request.Method.POST, Constants.HOST_URL + Constants.POST_ORDER,
-                    new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            try {
-
-                                JSONObject jsonObject = new JSONObject(response);
-                                Log.d("full url", response);
-                                String status = jsonObject.getString("Message");
-
-                                Toast.makeText(getApplicationContext(),status , Toast.LENGTH_SHORT).show();
-                              *//*  if (status.equals("true")) {
-
-
-                                    progressDialog.dismiss();
-
-                                }
-                                else if (status.equals("false")) {
-                                    String error = jsonObject.getString("error");
-                                    showSimpleAlertWithMessage(FinalSignatureActivity.this, error);
-                                }
-*//*
-
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                                progressDialog.dismiss();
-                            }
-
-
-                        }
-                    },
-                    new Response.ErrorListener() {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-                            Toast.makeText(getApplicationContext(), "Connection Problem.", Toast.LENGTH_SHORT).show();
-                            progressDialog.hide();
-                        }
-                    }) {
-                @Override
-                protected Map<String, String> getParams() {
-
-                    Map<String, String> params = new HashMap<String, String>();
-                    params.put("Content-Type", "application/json");
-                    params.put("save_signature", encoded);
-                    params.put("IsActive", "0");
-                    params.put("id", "1673");
-                    params.put("customer_of", "NON-AHS");
-                    params.put("tech", "Vik Baid");
-                    params.put("fname", "");
-                    params.put("lname", "");
-                    params.put("address", "");
-                    params.put("city", "");
-                    params.put("state", "");
-                    params.put("zip", "");
-                    params.put("ph_mobile", "");
-                    params.put("ph_alternate", "");
-                    params.put("ph_primary", "");
-                    params.put("email", "rajatmohan87@gmail.com");
-                    params.put("tenant", "");
-                    params.put("tenant_phone", "");
-                    params.put("disclaimer", "");
-                    params.put("description", "");
-                    params.put("diagnosis", "");
-                    params.put("resolution", "");
-                    params.put("product", "");
-                    params.put("finish", "");
-                    params.put("brands", "");
-                    params.put("features", "");
-                    params.put("service_type", "");
-                    params.put("service_amount", "");
-                    params.put("service_fee", "");
-                    params.put("paid_by", "");
-                    params.put("total_due", "");
-                    params.put("submit_signature", "");
-
-
-
-
-                    return params;
-                }
-            };
-            VolleySingleton.getInstance(getApplicationContext()).addToRequestque(strRequest);*/
         } else {
             Toast.makeText(getApplicationContext(), "No internet connection", Toast.LENGTH_SHORT).show();
         }
@@ -503,13 +392,15 @@ public class TermAndConditionActivity  extends CommonBaseActivity implements Vie
 
     }
 
-    public void showSimpleAlertWithMessage(Context context, String msg) {
+    public void showSimpleAlertWithMessage(final Context context, String msg) {
         new android.app.AlertDialog.Builder(context).setTitle(context.getResources().getString(R.string.app_name))
                 .setMessage(msg)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
 
+                        Intent i=new Intent(context,PendingWorkActivity.class);
+                        startActivity(i);
 
 
 

@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.smart.enterpriseplumbing.activites.FinalSignatureActivity;
 import com.example.smart.enterpriseplumbing.fragment.PinFragment;
 import com.example.smart.enterpriseplumbing.fragment.PlanFragment;
 import com.example.smart.enterpriseplumbing.fragment.SepectificationFragment;
@@ -53,16 +54,37 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
 
         TextView header_Save = (TextView) findViewById(R.id.header_Save);
         LinearLayout linear_Frist=(LinearLayout)findViewById(R.id.linear_Frist) ;
+
+       final  String save_Sig=dealModel.getSave_signature();
+
+
+
+
+
+
         linear_Frist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(ActivitySegment.this,TermAndConditionActivity.class);
-                startActivity(i);
+
+               if(save_Sig.equalsIgnoreCase("null"))
+               {
+                   Intent i=new Intent(ActivitySegment.this,TermAndConditionActivity.class);
+                   startActivity(i);
+               }
+               else
+                {
+                    Intent i=new Intent(ActivitySegment.this,FinalSignatureActivity.class);
+                    startActivity(i);
+
+                }
+
+
+
 
             }
         });
 
-        header_Save.setVisibility(View.VISIBLE);
+        header_Save.setVisibility(View.INVISIBLE);
         String id=dealModel.getId();
         String email=dealModel.getEmail();
         String dis_Id=dealModel.getDispatch_ID();
@@ -81,14 +103,12 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
         String digonis=dealModel.getDiagnosis();
         String finish=dealModel.getFinish();
         String feature=dealModel.getFeatures();
-
         String service_type=dealModel.getService_type();
         String servi_fee=dealModel.getService_fee();
         String ser_amount=dealModel.getService_amount();
         String paid_by=dealModel.getPaid_by();
         String due=dealModel.getTotal_due();
         String brand_type=dealModel.getBrands();
-
         String order_Date=dealModel.getOrder_date();
         String start_o_Date=dealModel.getStart_order_date();
         String auth=dealModel.getAuth();
@@ -97,6 +117,20 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
         String collected=dealModel.getCollected();
         String in_voice=dealModel.getInvoice_Number();
         String product=dealModel.getProduct();
+        String tant=dealModel.getTenant();
+        String tant_Phone=dealModel.getTenant_phone();
+        String desicliamer= dealModel.getDiagnosis();
+        String ph_aler=dealModel.getPh_alternate();
+        String ph_Phone=dealModel.getPh_mobile();
+
+        prefs.setStringValueForTag(Constants.TANT,tant);
+        prefs.setStringValueForTag(Constants.TANT_PHONE,tant_Phone);
+        prefs.setStringValueForTag(Constants.DISCLIAMER,desicliamer);
+        prefs.setStringValueForTag(Constants.PH_ALERT,ph_aler);
+        prefs.setStringValueForTag(Constants.PH_PHONE,ph_Phone);
+
+
+
        prefs.setStringValueForTag(Constants.EMAIL,email);
         prefs.setStringValueForTag(Constants.ID,id);
         prefs.setStringValueForTag(Constants.ORDER_DATE,order_Date);
@@ -106,7 +140,7 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
         prefs.setStringValueForTag(Constants.CHECK,check);
         prefs.setStringValueForTag(Constants.COLLECTED,collected);
         prefs.setStringValueForTag(Constants.IN_VOICE,in_voice);
-        prefs.setStringValueForTag(Constants.PRODUCT,product);
+        prefs.setStringValueForTag(Constants.FINAL_PRODCUT,product);
 
         prefs.setStringValueForTag(Constants.DISPACT_ID,dis_Id);
         prefs.setStringValueForTag(Constants.GATE_CODE,gate_Code);
@@ -118,19 +152,29 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
         prefs.setStringValueForTag(Constants.STATE,state);
         prefs.setStringValueForTag(Constants.ZIP,zip);
         prefs.setStringValueForTag(Constants.CUSTO_OFF,off);
-        prefs.setStringValueForTag(Constants.BRAND_TYPE,brand_type);
-
+        prefs.setStringValueForTag(Constants.FINAL_BRAND,brand_type);
         prefs.setStringValueForTag(Constants.DISCLAIMER,disclaimer);
-        prefs.setStringValueForTag(Constants.DISCRIPTION,discrip);
-        prefs.setStringValueForTag(Constants.RESOLUTION,resolu);
-        prefs.setStringValueForTag(Constants.DIAGONIS,digonis);
-        prefs.setStringValueForTag(Constants.FINISH,finish);
-        prefs.setStringValueForTag(Constants.FEATURE,feature);
-        prefs.setStringValueForTag(Constants.SERVICES_TYPE,service_type);
+        prefs.setStringValueForTag(Constants.FINAL_DESC,discrip);
+        prefs.setStringValueForTag(Constants.FINAL_RESOLTI,resolu);
+        prefs.setStringValueForTag(Constants.FINAL_DIAGONIS,digonis);
+        prefs.setStringValueForTag(Constants.FINAL_FINISH,finish);
+        prefs.setStringValueForTag(Constants.FINAL_FIXTURE,feature);
+        prefs.setStringValueForTag(Constants.FINAL_SERVICE,service_type);
         prefs.setStringValueForTag(Constants.SERVICES_FEE,servi_fee);
-        prefs.setStringValueForTag(Constants.SER_AMOUNT,ser_amount);
+        prefs.setStringValueForTag(Constants.FINAL_AMOUNT,ser_amount);
         prefs.setStringValueForTag(Constants.PIAB,paid_by);
         prefs.setStringValueForTag(Constants.DUE,due);
+
+
+/*
+
+        brand = prefs.getStringValueForTag(Constants.BRAND_TYPE);
+        product = prefs.getStringValueForTag(Constants.PRODUCT);
+        feature = prefs.getStringValueForTag(Constants.FEATURE);
+        finish = prefs.getStringValueForTag(Constants.FINISH);
+*/
+
+
 
         radio_All.setOnClickListener(this);
         radio_Call.setOnClickListener(this);
@@ -189,7 +233,7 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
 
 
                 fragment = new SepectificationFragment();
-                transactionFragments(fragment, true, R.id.container_Parent);
+                transactionFragments(fragment, false, R.id.container_Parent);
                 break;
 
             case R.id.radio_Meeting:
@@ -205,7 +249,7 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
 
 
                 fragment = new ServiceFragment();
-                transactionFragments(fragment, true, R.id.container_Parent);
+                transactionFragments(fragment, false, R.id.container_Parent);
                 break;
 
 
@@ -225,13 +269,13 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
 
 
                 fragment = new PinFragment();
-                transactionFragments(fragment, true, R.id.container_Parent);
+                transactionFragments(fragment, false, R.id.container_Parent);
                 break;
 
             default:
 
                 fragment = new PlanFragment();
-                transactionFragments(fragment, true, R.id.container_Parent);
+                transactionFragments(fragment, false, R.id.container_Parent);
                 break;
         }
 
@@ -250,13 +294,14 @@ public class ActivitySegment extends CommonBaseActivity implements View.OnClickL
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(viewResource, fragment);
         if (backStackTag) {
-            ft.addToBackStack(null);
+
+          ft.addToBackStack(null);
         }
 
         ft.commit();
     }
 
-    @Override
+  @Override
     public void onBackPressed() {
         if (getFragmentManager().getBackStackEntryCount() > 0) {
             finish();

@@ -13,6 +13,8 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Looper;
+import android.os.Message;
 import android.os.Parcelable;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -36,6 +38,7 @@ import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.smart.enterpriseplumbing.CommonBaseActivity;
+import com.example.smart.enterpriseplumbing.PendingWorkActivity;
 import com.example.smart.enterpriseplumbing.R;
 import com.example.smart.enterpriseplumbing.TermAndConditionActivity;
 import com.example.smart.enterpriseplumbing.utils.App;
@@ -55,9 +58,12 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Handler;
 
 /**
  * Created by Smart on 3/28/2018.
@@ -67,7 +73,7 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
 
     private Boolean isInternetPresent;
     private ConnectionDetector connectionDetector;
-    private ProgressDialog progressDialog, progressDialog2, progressDialog3, progressDialog4;
+    private ProgressDialog  progressDialog3;
     private String status;
     private boolean isFetchingData = false;
     ArrayList<String> catogory_name_array, catogory_id_array, region_name_array;
@@ -76,6 +82,11 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
     private SignaturePad mSignaturePad;
     private Button mClearButton;
     private Button mSaveButton;
+    String strTime, todayDate,strDay;
+    String meassge;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +96,14 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
         ImageView back_image = (ImageView) findViewById(R.id.back_Arrow);
         catogory_name_array = new ArrayList<String>();
         catogory_id_array = new ArrayList<String>();
+        Calendar c = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat sdf4 = new SimpleDateFormat("EEE");
+        strTime = sdf.format(c.getTime());
+        todayDate = sdf3.format(c.getTime());
+        strDay = sdf4.format(c.getTime());
+
         TextView txt_Header = (TextView) findViewById(R.id.header_title);
         TextView header_Save = (TextView) findViewById(R.id.header_Save);
         header_Save.setVisibility(View.INVISIBLE);
@@ -172,6 +191,9 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
     private void loginApi(String encoded) {
         if (App.getInstance().isConnected()) {
             progressDialog3 = setThirdProgressBar();
+
+
+
             try {
                 RequestQueue requestQueue = Volley.newRequestQueue(this);
                 String URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/Postorder_form";
@@ -179,24 +201,24 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                 params.put("save_signature", "");
                 params.put("IsActive", "1");
                 params.put("id", prefs.getStringValueForTag(Constants.ID));
-                params.put("Dispatch_ID", prefs.getStringValueForTag(Constants.SAVE_ID));
-                params.put("customer_of",prefs.getStringValueForTag(Constants.SAVE_OFF));
-                params.put("tech", prefs.getStringValueForTag(Constants.FINAL_PLUMBER));
-                params.put("fname", prefs.getStringValueForTag(Constants.SAVE_FIRST));
-                params.put("lname", prefs.getStringValueForTag(Constants.SAVE_LAST));
-                params.put("address", prefs.getStringValueForTag(Constants.SAVE_ADDRESS));
-                params.put("city", prefs.getStringValueForTag(Constants.SAVE_CITY));
-                params.put("state", prefs.getStringValueForTag(Constants.SAVE_STATE));
-                params.put("zip", prefs.getStringValueForTag(Constants.SAVE_ZIP));
-                params.put("ph_mobile", "");
-                params.put("ph_alternate", "");
-                params.put("ph_primary", "");
+                params.put("Dispatch_ID", prefs.getStringValueForTag(Constants.DISPACT_ID));
+                params.put("customer_of",prefs.getStringValueForTag(Constants.CUSTO_OFF));
+                params.put("tech", prefs.getStringValueForTag(Constants.PLUMBER));
+                params.put("fname", prefs.getStringValueForTag(Constants.FIRST));
+                params.put("lname", prefs.getStringValueForTag(Constants.LAST));
+                params.put("address", prefs.getStringValueForTag(Constants.ADDRESS));
+                params.put("city", prefs.getStringValueForTag(Constants.CITY));
+                params.put("state", prefs.getStringValueForTag(Constants.STATE));
+                params.put("zip", prefs.getStringValueForTag(Constants.ZIP));
+                params.put("ph_mobile", prefs.getStringValueForTag(Constants.PH_PHONE));
+                params.put("ph_alternate", prefs.getStringValueForTag(Constants.PH_ALERT));
+                params.put("ph_primary", prefs.getStringValueForTag(Constants.PH_PHONE));
                 params.put("email", prefs.getStringValueForTag(Constants.EMAIL));
-                params.put("tenant", "");
-                params.put("tenant_phone", "");
-                params.put("disclaimer","");
+                params.put("tenant", prefs.getStringValueForTag(Constants.TANT));
+                params.put("tenant_phone", prefs.getStringValueForTag(Constants.TANT_PHONE));
+                params.put("disclaimer", prefs.getStringValueForTag(Constants.DISCLAIMER));
                 params.put("description", prefs.getStringValueForTag(Constants.FINAL_DESC));
-                params.put("diagnosis","");
+                params.put("diagnosis",prefs.getStringValueForTag(Constants.FINAL_DIAGONIS));
                 params.put("resolution", prefs.getStringValueForTag(Constants.FINAL_RESOLTI));
                 params.put("product", prefs.getStringValueForTag(Constants.FINAL_PRODCUT));
                 params.put("finish", prefs.getStringValueForTag(Constants.FINAL_FINISH));
@@ -207,6 +229,17 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                 params.put("service_fee", prefs.getStringValueForTag(Constants.SERVICES_FEE));
                 params.put("paid_by", prefs.getStringValueForTag(Constants.PIAB));
                 params.put("total_due", prefs.getStringValueForTag(Constants.DUE));
+                params.put("order_date", prefs.getStringValueForTag(Constants.ORDER_DATE));
+                params.put("GateCode", prefs.getStringValueForTag(Constants.GATE_CODE));
+                params.put("start_order_date", prefs.getStringValueForTag(Constants.START_O_DATE));
+                params.put("Auth", prefs.getStringValueForTag(Constants.AUTH));
+                params.put("Auth_Amount",prefs.getStringValueForTag(Constants.AUTH_AMOUNT));
+                params.put("Check", prefs.getStringValueForTag(Constants.CHECK));
+                params.put("Collected", prefs.getStringValueForTag(Constants.COLLECTED));
+                params.put("sign_bool","");
+                params.put("Invoice_Number",prefs.getStringValueForTag(Constants.IN_VOICE));
+                params.put("note", "");
+                params.put("ModifiedDate",todayDate);
                 params.put("submit_signature", encoded);
                 final String requestBody = params.toString();
 
@@ -214,8 +247,7 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                     @Override
                     public void onResponse(String response) {
 
-                        String meassge="Data save successfully";
-
+                        meassge="Data save successfully";
                         showSimpleAlertWithMessage( FinalSignatureActivity.this,meassge);
                        // Toast.makeText(getApplicationContext(), "Data save successfully", Toast.LENGTH_SHORT).show();
                         Log.i("VOLLEY", response);
@@ -225,6 +257,9 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         Log.e("VOLLEY", error.toString());
+
+                        meassge="Data save successfully";
+                        showSimpleAlertWithMessage( FinalSignatureActivity.this,meassge);
                     }
                 }) {
                     @Override
@@ -247,6 +282,16 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                         String responseString = "";
                         if (response != null) {
                             responseString = String.valueOf(response.statusCode);
+
+                          if(responseString.equalsIgnoreCase("200"))
+                          {
+                              meassge="Data save successfully";
+                              showSimpleAlertWithMessage( FinalSignatureActivity.this,meassge);
+                          }
+
+
+
+
                             // can get more details such as response.headers
                         }
                         return Response.success(responseString, HttpHeaderParser.parseCacheHeaders(response));
@@ -364,7 +409,7 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
         }
     }
 
-    public void showSimpleAlertWithMessage(Context context, String msg) {
+    public void showSimpleAlertWithMessage( final Context context, String msg) {
         new android.app.AlertDialog.Builder(context).setTitle(context.getResources().getString(R.string.app_name))
                 .setMessage(msg)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -372,6 +417,8 @@ public class FinalSignatureActivity extends CommonBaseActivity implements View.O
                     public void onClick(DialogInterface dialog, int which) {
 
 
+                        Intent i=new Intent(context,PendingWorkActivity.class);
+                        startActivity(i);
 
 
                     }

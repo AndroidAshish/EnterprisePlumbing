@@ -62,7 +62,7 @@ public class LoginActivity extends CommonBaseActivity {
         LoginActivity.this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         LinearLayout login_Btn = (LinearLayout) findViewById(R.id.loginButtonFragment);
 
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+     //   this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         //  TextView forgot_button =(TextView)findViewById(R.id.myTextView);
         connectionDetector = new ConnectionDetector(LoginActivity.this);
@@ -120,7 +120,7 @@ public class LoginActivity extends CommonBaseActivity {
     }
 
     private void loginWithEmail() {
-        String email_login = email_Login.getText().toString().trim();
+        String email_login = email_Login.getText().toString().replace(" ", "%20").trim().trim();
         String pass_logon = email_Password.getText().toString();
         prefs.setStringValueForTag(Constants.SAVE_EMAIL,email_login);
         prefs.setStringValueForTag(Constants.SAVE_PASSWORD,pass_logon);
@@ -138,7 +138,7 @@ public class LoginActivity extends CommonBaseActivity {
             return;
         }
 
-        loginApi();
+        loginApi(email_login,pass_logon);
     }
 
     public boolean isValidEmail(CharSequence target) {
@@ -167,11 +167,11 @@ public class LoginActivity extends CommonBaseActivity {
                 .show();
     }
 
-    public void loginApi() {
+    public void loginApi(String email_login,String pass_logon) {
         isInternetPresent = connectionDetector.isConnectingToInternet();
         if (isInternetPresent) {
             progressDialog = setProgressBar();
-            StringRequest request = new StringRequest(Request.Method.GET, Constants.HOST_URL +"Get_Assigned_Task/?username="+email_Login.getText().toString()+"&password="+email_Password.getText().toString(),
+            StringRequest request = new StringRequest(Request.Method.GET, Constants.HOST_URL +"Get_Assigned_Task/?username="+email_login+"&password="+pass_logon,
 
                     new Response.Listener<String>() {
                         @Override
@@ -182,7 +182,12 @@ public class LoginActivity extends CommonBaseActivity {
 
                                 JSONArray jsonArray = new JSONArray(response);
                                // String status = jsonObject.getString("statusCode");
-                              //  String messagee=jsonObject.getString("message");
+
+                            /*   JSONObject messge=new JSONObject(response);
+                               String message1=messge.getString("Message");
+                                Toast.makeText(LoginActivity.this, message1, Toast.LENGTH_SHORT).show();
+*/
+
 
                                 planArray = Perser.getTitleHis(jsonArray);
 
@@ -192,6 +197,8 @@ public class LoginActivity extends CommonBaseActivity {
 
                                 } else {
 
+                                    Intent i=new Intent(LoginActivity.this,PendingWorkActivity.class);
+                                    startActivity(i);
 
                                 }
 
@@ -219,7 +226,7 @@ public class LoginActivity extends CommonBaseActivity {
                         @Override
                         public void onErrorResponse(VolleyError error) {
 
-                            Toast.makeText(LoginActivity.this, "Connection problem. Please try again", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(LoginActivity.this, "An error has occurred", Toast.LENGTH_SHORT).show();
                         }
                     });
 

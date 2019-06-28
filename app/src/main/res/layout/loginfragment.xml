@@ -2,21 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2b2b2b"
+    android:background="#ffffff"
     android:alpha="0.8"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#80000000"
+
         android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_weight="1"
-            android:gravity="center" >
+            android:layout_height="80dp"
+           >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -24,28 +23,42 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="150dp"
-                    android:src="@drawable/logo_p" />
+                    android:layout_width="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/app_icon" />
 
             </LinearLayout>
 
 
 
-
         </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:text="Service Contract"/>
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="256dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:layout_marginTop="40dp"
             android:orientation="vertical" >
 
             <LinearLayout
                 android:id="@+id/linearLayout1"
                 android:layout_width="match_parent"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/linearLayout2"
                 android:layout_alignLeft="@+id/linearLayout2"
@@ -55,17 +68,36 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:text="Username"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:background="@drawable/rect" >
 
                     <com.example.smart.enterpriseplumbing.custom_view.MyEditText
                         android:id="@+id/email_Login"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:background="@null"
                         android:ems="10"
-
-                        android:hint="E-Mail address"
+                        android:text=""
                         android:inputType="textEmailAddress"
                         android:paddingLeft="5dp" >
 
@@ -75,32 +107,48 @@
 
                 <!--    android:text="Vik%20Baid"-->
                 </LinearLayout>
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
-                    android:layout_height="10dp"
+                    android:layout_height="20dp"
                     />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:text="Password"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:background="@drawable/rect" >
 
                     <com.example.smart.enterpriseplumbing.custom_view.MyEditText
                         android:id="@+id/pass_Login"
                         android:layout_width="match_parent"
-                        android:layout_height="45dp"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
-                        android:hint="Password"
                         android:inputType="textPassword"
                         android:background="@null"
                         android:ems="10"
+                        android:text=""
                         android:paddingLeft="5dp" />
 
                    <!-- android:text="Aladdin123!"-->
 
+                </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -111,7 +159,7 @@
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/rect_green"
                 android:gravity="center" >
 
@@ -128,6 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_gravity="center"
+                android:visibility="gone"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:orientation="horizontal">

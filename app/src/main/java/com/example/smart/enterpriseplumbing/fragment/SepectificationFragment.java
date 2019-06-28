@@ -144,14 +144,18 @@ String final_Resolu,final_Diagonis,final_Desc;
          //super_Dis= final_Desc +";"+dis_First+";"+dis_Second+";"+dis_Third+";"+dis_Fourth;
 
 
+/*
 
          digonis = prefs.getStringValueForTag(Constants.DIAGONIS);
         resol = prefs.getStringValueForTag(Constants.RESOLUTION);
-        String feature = prefs.getStringValueForTag(Constants.FEATURE);
-        String finish = prefs.getStringValueForTag(Constants.FINISH);
+        descriptio = prefs.getStringValueForTag(Constants.DISCRIPTION);
+*/
 
-         descriptio = prefs.getStringValueForTag(Constants.DISCRIPTION);
 
+
+        digonis = prefs.getStringValueForTag(Constants.FINAL_DIAGONIS);
+        resol = prefs.getStringValueForTag(Constants.FINAL_RESOLTI);
+        descriptio = prefs.getStringValueForTag(Constants.FINAL_DESC);
 
         String[] allDes = new String[0];
         try {

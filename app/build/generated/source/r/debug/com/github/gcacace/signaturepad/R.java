@@ -18,7 +18,7 @@ public final class R {
         public static final int dataBinding = 0x7f08003c;
         public static final int onAttachStateChangeListener = 0x7f0800a8;
         public static final int onDateChanged = 0x7f0800a9;
-        public static final int textWatcher = 0x7f080100;
+        public static final int textWatcher = 0x7f080107;
     }
     public static final class styleable {
         public static final int[] SignaturePad = { 0x7f03005a, 0x7f030126, 0x7f030127, 0x7f030128, 0x7f0301a8 };

@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="No Result found !!"
+            android:text="No Customers Assigned !!"
             android:textStyle="bold"
             android:visibility="gone"
 

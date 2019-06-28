@@ -25,6 +25,7 @@ import android.widget.Toast;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.smart.enterpriseplumbing.activites.CreateActivitySegment;
 import com.example.smart.enterpriseplumbing.adapter.PendingWorkAdapter;
 import com.example.smart.enterpriseplumbing.models.PendingModel;
 import com.example.smart.enterpriseplumbing.utils.ConnectionDetector;
@@ -70,6 +71,8 @@ public class PendingWorkActivity extends CommonBaseActivity implements View.OnCl
         initCharacterSearch();
         ImageView back_image = (ImageView) findViewById(R.id.back_Arrow);
         ImageView search_icon = (ImageView) findViewById(R.id.search_icon);
+        ImageView image_Plus = (ImageView) findViewById(R.id.image_Plus);
+
         TextView txt_Log=(TextView)findViewById(R.id.txt_Log) ;
         txt_Log.setVisibility(View.VISIBLE);
         rela_Layout = (RelativeLayout) findViewById(R.id.search_edit_layout);
@@ -87,11 +90,12 @@ public class PendingWorkActivity extends CommonBaseActivity implements View.OnCl
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         search_icon.setOnClickListener(this);
+        image_Plus.setOnClickListener(this);
         txt_Log.setOnClickListener(this);
     /*    userName="Vik%20Baid";
         password="Aladdin123!";
 */
-        userName=prefs.getStringValueForTag(Constants.SAVE_EMAIL);
+        userName=prefs.getStringValueForTag(Constants.SAVE_EMAIL).replace(" ", "%20").trim().trim();;
         password=prefs.getStringValueForTag(Constants.SAVE_PASSWORD);
         getTrainListApi();
     }
@@ -131,6 +135,13 @@ public class PendingWorkActivity extends CommonBaseActivity implements View.OnCl
                 break;
 
 
+            case R.id.image_Plus:
+                Intent intent = new Intent(PendingWorkActivity.this, CreateActivitySegment.class);
+                startActivity(intent);
+                break;
+
+
+
 
 
 
@@ -156,10 +167,7 @@ public class PendingWorkActivity extends CommonBaseActivity implements View.OnCl
                                 JSONArray jsonArray=new JSONArray(response);
                                 //status = jsonObject.getString("success");
 
-
-
-
-                                    planArray = Perser.getTitleHis(jsonArray);
+                                planArray = Perser.getTitleHis(jsonArray);
 
                                     if (!planArray.isEmpty()) {
                                         adapter = new PendingWorkAdapter(PendingWorkActivity.this, planArray);

@@ -211,7 +211,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Product 1"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -243,7 +244,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="brand 1"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -277,7 +279,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Fixture 1"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -311,7 +314,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Finish 1"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -365,7 +369,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Product 2"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -397,7 +402,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="brand 2"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -431,7 +437,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Fixture 2"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -464,7 +471,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Finish 2"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -514,7 +522,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Product 3"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -546,7 +555,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="brand 3"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -580,7 +590,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Fixture 3"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -613,7 +624,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Finish 3"
-                              android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -667,7 +679,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Product 4"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -699,7 +712,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="brand 4"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -733,7 +747,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Fixture 4"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 
@@ -766,7 +781,8 @@
                                 android:background="@null"
                                 android:singleLine="true"
                                 android:hint="Finish 4"
-                                android:textColor="#919191"
+                                android:textColor="#000"
+                                android:textColorHint="#919191"
                                 android:textSize="14sp" />
 
 

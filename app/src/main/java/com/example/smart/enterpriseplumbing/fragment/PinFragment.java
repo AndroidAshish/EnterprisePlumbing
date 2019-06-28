@@ -152,12 +152,18 @@ public class PinFragment extends CommonBaseFragment {
         finish_third = edit_finish_Third.getText().toString();
         finish_fourth = edit_finish_Fourth.getText().toString();
 
+/*
 
         brand = prefs.getStringValueForTag(Constants.BRAND_TYPE);
         product = prefs.getStringValueForTag(Constants.PRODUCT);
         feature = prefs.getStringValueForTag(Constants.FEATURE);
         finish = prefs.getStringValueForTag(Constants.FINISH);
+*/
 
+        brand = prefs.getStringValueForTag(Constants.FINAL_BRAND);
+        product = prefs.getStringValueForTag(Constants.FINAL_PRODCUT);
+        feature = prefs.getStringValueForTag(Constants.FINAL_FIXTURE);
+        finish = prefs.getStringValueForTag(Constants.FINAL_FINISH);
 
         //   String  brand1= brand.replace(";","\n");
         //This will split the brand into array elements of type: Brands:Price Pfister, Brands1:, Brands2:, Brands3:

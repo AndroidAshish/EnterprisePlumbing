@@ -11,6 +11,9 @@ public class Constants {
     public static final String IS_LOGIN = "user_api";
 // public static final String HOST_URL = "https://api.pipedrive.com/v1/";
 
+ // public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
+
+
   public static final String HOST_URL = "http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/";
     //  public static final String REGISTER_URL = "http://dev.goigi.biz/kidcheck/App/Api/Registration";
     public static final String REGISTER_URL = "https://demo.goigi.biz/kidcheck/App/Api/Registration";
@@ -47,7 +50,7 @@ public class Constants {
   public static final String ADDRESS ="address" ;
   public static final String CITY ="city" ;
   public static final String STATE = "state";
-  public static final String ZIP = "zip";
+  public static final String ZIP = "zipp";
     public static final String CUSTO_OFF = "off";
   public static final String DISCLAIMER = "disclam";
   public static final String DISCRIPTION ="discriii" ;
@@ -93,6 +96,92 @@ public class Constants {
   public static final String SAVE_OFF = "saveoff";
   public static final String FINAL_PLUMBER = "plumber";
     public static final String FINAL_AMOUNT = "finalamount";
+  public static final String TANT = "tant";
+  public static final String TANT_PHONE ="tantphone" ;
+  public static final String DISCLIAMER ="disclamer" ;
+  public static final String PH_ALERT = "phalart";
+  public static final String PH_PHONE = "phphone";
+
+
+    public static final String CREATE_SAVE_ID = "createsave";
+  public static final String CREATE_GATE_CODE ="creategate" ;
+  public static final String CREATE_FIRST = "createfirst";
+  public static final String CREATE_LAST = "createlast";
+  public static final String CREATE_ADDRESS ="createaddress";
+  public static final String CREATE_STATE ="createstate" ;
+  public static final String CREATE_CITY = "createcity";
+  public static final String CREATE_ZIP = "createzip";
+  public static final String CREATE_CUSTO_OFF = "createoff";
+  public static final String CREATE_PLUMBER = "createplumber";
+    public static final String CREATE_FINAL_DESC = "createdesc";
+  public static final String CREATE_FINAL_DIAGONIS ="creatediago" ;
+  public static final String CREATE_FINAL_RESOLTI = "createresol";
+  public static final String CREATE_FINAL_SERVICE ="createfinal" ;
+  public static final String CREATE_FINAL_AMOUNT = "createamount";
+  public static final String CREATE_FINAL_PRODCUT = "createfinalprodcut";
+  public static final String CREATE_FINAL_FINISH = "createfinalfinish";
+  public static final String CREATE_FINAL_FIXTURE ="createfinalfixture" ;
+  public static final String CREATE_FINAL_BRAND = "createfinalbrand";
+  public static final String CREATE_DISPACTH_ID ="createdispach" ;
+  public static final String CREATE_MOBILE ="createmobile" ;
+  public static final String CREATE_EMAIL = "createemail";
+
+//CREATE SAVE INSTAT OF sECONF  PAGE
+    public static final String CREATE_FIRST_DES = "crreatefirstdesc";
+  public static final String CREATE_FIRST_DIG = "createfirstdig";
+  public static final String CREATE_FIRST_RES = "createfirstres";
+  public static final String CREATE_F_DES = "createfdes";
+  public static final String CREATE_F_DIG = "createfdig";
+  public static final String CREATE_F_RES ="createfres" ;
+  public static final String CREATE_S_DES = "createsdes";
+  public static final String CREATE_S_DIG = "createsdig";
+  public static final String CREATE_S_RES = "createsres";
+  public static final String CREATE_T_DES = "createtdes";
+  public static final String CREATE_T_DIG = "createtdig";
+  public static final String CREATE_T_RES = "createtres";
+  public static final String CREATE_FO_DES = "createfodes";
+  public static final String CREATE_FO_DIG = "createfodig";
+  public static final String CREATE_FO_RES = "createfores";
+
+  //CREATE SAVE INSTANT CONSTAT FOR SERVICE PAGE
+
+
+  public static final String CREATE_SERVICE_FIRST = "csf";
+  public static final String CREATE_SERVICE_F ="csff" ;
+  public static final String CREATE_SERVICE_S ="css" ;
+  public static final String CREATE_SERVICE_T ="cst" ;
+  public static final String CREATE_SERVICE_FO = "csfo";
+  public static final String CREATE_AMO_FIRST = "csfi";
+  public static final String CREATE_AMO_F ="csamf" ;
+  public static final String CREATE_AMO_S ="sams" ;
+  public static final String CREATE_AMO_T = "csmt";
+  public static final String CREATE_AMO_FO ="samfo" ;
+
+
+
+  //CREATE SAVE INSTANT STATE FOR PRODUCT
+  public static final String CREATE_FIRST_P = "crp";
+  public static final String CREATE_FIRST_B = "cfb";
+  public static final String CREATE_FIRST_F = "cff";
+  public static final String CREATE_FIRST_FI = "cffi";
+
+  public static final String CREATE_F_P = "cfp";
+  public static final String CREATE_F_B = "cfbb";
+  public static final String CREATE_F_F ="cfff";
+  public static final String CREATE_F_FI = "cffi";
+
+  public static final String CREATE_S_P = "csp";
+  public static final String CREATE_S_B = "csb";
+  public static final String CREATE_S_F = "csfiii";
+  public static final String CREATE_S_FI ="csfii" ;
+  public static final String CREATE_T_P = "cctp";
+  public static final String CREATE_T_B = "ccstb";
+  public static final String CREATE_T_F = "cctf";
+  public static final String CREATE_T_FI = "ctfi";
+  public static final String CREATE_FO_P = "cfop";
+  public static final String CREATE_FO_B ="cfob" ;
+  public static final String CREATE_FO_F = "cfof";
+  public static final String CREATE_FO_FI = "cfofi";
 
 //http://ec2-18-217-91-105.us-east-2.compute.amazonaws.com:93/api/order_form/Postorder_form/
     // https://api.pipedrive.com/v1/organizations/56?api_token=90e07bbc77f539a6b05d5254628bfb285c7f6f74

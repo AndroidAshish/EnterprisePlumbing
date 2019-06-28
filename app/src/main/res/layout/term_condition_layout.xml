@@ -50,8 +50,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:padding="5dp">
+
+
+                <CheckBox
+                    android:id="@+id/remember_First"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sign_remember"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
 
                 <TextView
 
@@ -91,8 +104,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:padding="5dp">
+
+
+
+                <CheckBox
+                    android:id="@+id/remember_Second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/sign_remember"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
 
                 <TextView
 
@@ -111,7 +138,183 @@
 
     </android.support.v7.widget.CardView>
 
-    <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+
+                        <CheckBox
+                            android:id="@+id/remember_Third"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/sign_remember"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="The law requires that AP offer you any parts that were replaced during the service call. If you do not want the parts,
+initial the check box. OK for Aladdin’s Plumbing to Dispose of Replaced Part. This contractor also had Guard Insurance Broker
+worker’s compensation."/>
+
+
+" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+
+                        <CheckBox
+                            android:id="@+id/remember_Fourth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/sign_remember"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Notice to Buyer: You are entitled to a completely filled in signed copy of this agreement before any work may be started."/>
+
+
+                        " />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+
+                        <CheckBox
+                            android:id="@+id/remember_Fifith"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/sign_remember"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="3% Service Charge for all credit cards."/>
+
+
+                        " />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="com.goigi.android.kidschecker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"

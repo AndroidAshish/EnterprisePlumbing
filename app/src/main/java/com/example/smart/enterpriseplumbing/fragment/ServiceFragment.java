@@ -84,8 +84,6 @@ String final_Service;
         final EditText edit_Amu_Third=(EditText)v.findViewById(R.id.edit_Amu_Third);
         final EditText edit_Amu_Fourth=(EditText)v.findViewById(R.id.edit_Amu_Fourth);
 
-
-
         service_first=edit_Ser_First.getText().toString();
         service_second=edit_Ser_Second.getText().toString();
         service_third =edit_Ser_Third.getText().toString();
@@ -100,9 +98,14 @@ String final_Service;
 
 
 
+        String type=prefs.getStringValueForTag(Constants.FINAL_SERVICE);
+        String amount=prefs.getStringValueForTag(Constants.FINAL_AMOUNT);
+
+/*
 
         String type=prefs.getStringValueForTag(Constants.SERVICES_TYPE);
         String amount=prefs.getStringValueForTag(Constants.SER_AMOUNT);
+*/
 
         String[] allDes = type.split(";");
         //This isn't good coding standard, but is the easiest way to do it for this API. in future API's will be much better.

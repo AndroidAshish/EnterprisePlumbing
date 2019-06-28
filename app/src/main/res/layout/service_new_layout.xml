@@ -162,7 +162,7 @@
                                 android:layout_weight="0.30"
                                 android:background="@null"
                                 android:singleLine="true"
-                                android:hint="service type 2"
+                                android:hint="Service type 2"
                                 android:textSize="14sp" />
 
 
